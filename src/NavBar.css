@@ -1,0 +1,7 @@
+.NavBar a.active{
+  color:pink;
+}
+
+a:visited {
+  color:white;
+}

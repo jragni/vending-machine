@@ -1,23 +1,11 @@
-import logo from "./logo.svg";
 import "./App.css";
-
+import VendingMachine from "./VendingMachine";
 function App() {
+  // TODO: create three components for snacks
+  // TODO: create links
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <VendingMachine />
     </div>
   );
 }

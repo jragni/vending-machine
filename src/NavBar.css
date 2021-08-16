@@ -1,7 +1,11 @@
+.NavBar {
+  background-color: orange;
+  padding: 25px;
+}
 .NavBar a.active{
   color:pink;
 }
 
-a:visited {
+.NavBar a:visited {
   color:white;
 }

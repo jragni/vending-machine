@@ -5,24 +5,15 @@ import Soda from "./Soda";
 import Chips from "./Chips";
 import NavBar from "./NavBar";
 import "./VendingMachine.css";
+import Home from "./Home";
 
-const VENDING_MACHINE_URL = "https://i.pinimg.com/originals/48/9a/8e/489a8e1e87fe141a1063ba60dc1b508f.jpg";
+/// node
 
 function VendingMachine(props) {
-  const [backgroundImage, setBackgroundImage] = useState(VENDING_MACHINE_URL);
-
-  const styles = {
-    backgroundImage: `url(${backgroundImage})`
-  }
-
-  function changeImage(url) {
-    setBackgroundImage(url);
-  }
-  
   return (
-    <div className="VendingMachine" style={styles}>
+    <div className="VendingMachine">
       <BrowserRouter>
-      <NavBar changeImage={changeImage}/>
+        <NavBar />
         <Route exact path="/soda">
           <Soda />
         </Route>
@@ -31,6 +22,9 @@ function VendingMachine(props) {
         </Route>
         <Route exact path="/sardines">
           <Sardines />
+        </Route>
+        <Route exact path="/">
+          <Home />
         </Route>
       </BrowserRouter>
     </div>
